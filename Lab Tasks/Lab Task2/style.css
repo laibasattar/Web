@@ -1,0 +1,82 @@
+
+.input-group-append .btn-outline-secondary {
+  background-color: #fff;
+  border-color: white;
+}
+.input-group {
+  background-color: #fff;
+}
+
+.input-group .form-control {
+  border-color: #fff;
+}
+
+.input-group .form-control:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.container-fluid .navbar-brand {
+font-weight: bold;
+}
+
+.container-fluid .navbar-brand .text {
+color: orangered;
+}
+
+.navbar-nav .nav-link {
+color: white;
+font-size: 17px;
+margin-left: 10%px;
+}
+
+.navbar-nav .nav-link.active {
+color: rgb(250, 80, 19) !important;
+border-bottom-style: solid;
+border-width: 1px;
+
+}
+
+.navbar-nav .nav-link:hover {
+color: rgb(250, 80, 19) !important;
+border-bottom-style: solid;
+border-width: 1px;
+}
+
+.navsearch .nav-link:hover .i {
+  color: rgb(250, 80, 19) !important;
+}
+
+.slideleft {
+width: 5% !important;
+justify-content: center !important;
+opacity: 1;
+}
+
+.slideright {
+  width: 5% !important;
+  justify-content: center !important;
+  opacity: 1 !important;
+}
+
+.slidein {
+  position: relative;
+  animation-duration: 1s;
+  animation-name: slide-in;
+  animation-timing-function: ease-out;
+}
+
+@keyframes slide-in {
+  0% { right: -40%; }
+  100% { right: 0%; }
+}
+
+.container .form-group .form-control:focus {
+  border-color: orangered;
+  box-shadow: none;
+}
