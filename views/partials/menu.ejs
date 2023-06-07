@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-3 ms-3" href="#"><span class="text"> Tectevo</span> Engineers</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item  navlist">
+            <a class="nav-link <%= currentPage === 'home' ? 'active' : '' %>" href="/">Home</a>
+          </li>
+          <li class="nav-item  navlist">
+            <a class="nav-link <%= currentPage === 'product' ? 'active' : '' %>" href="/home#product">Products</a>
+          </li>
+          <li class="nav-item  navlist">
+            <a class="nav-link <%= currentPage === 'about' ? 'active' : '' %>" href="/home#about">About</a>
+          </li>
+          <li class="nav-item  navlist">
+            <a class="nav-link <%= currentPage === 'contact' ? 'active' : '' %>" href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="nav justify-content-end navsearch">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">
+            <form class="form-inline my-2 my-lg-0">
+                <div class="input-group rounded-pill">
+                  <input type="text" class="form-control rounded-pill form-control-sm mr-sm-2" placeholder="Search">
+                  <div class="input-group-append">
+                    <button type="submit" class="btn btn-outline-secondary rounded-pill my-2 my-sm-0">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>                                                              
+        </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.instagram.com/_bend_de_trend/">
+            <i class="fa-brands fa-instagram" style="font-size: 170%; color: white;"></i>
+        </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.facebook.com/bend.trend.5496">
+            <i class="fa-brands fa-facebook" style="font-size: 170%; color: white;"></i>
+        </a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
