@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product App - Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <% include partials/menu %>
+  <div class="container mt-4">
+    <h1>Products</h1>
+    <table class="table mt-4">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Material</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% products.forEach(product => { %>
+          <tr>
+            <td><%= product.name %></td>
+            <td><%= product.price %></td>
+            <td><%= product.material %></td>
+            <td>
+              <a href="/products/edit/<%= product._id %>" class="btn btn-primary">Edit</a>
+              <form action="/products/delete/<%= product._id %>" method="POST" class="d-inline">
+                <button type="submit" class="btn btn-danger">Delete</button>
+              </form>
+            </td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
